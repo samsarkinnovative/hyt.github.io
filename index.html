@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+    <TITLE>FC - Future coder</TITLE>
+<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+<script src="https://kit.fontawesome.com/8144e4e513.js" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Student's place to get useful resources, tools and updates about the world to learn more in short time.">
+<meta name="author" content="Divyansh Mathur">
+<meta name="keywords" content="HTML, CSS, JavaScript,online-resources, Students, web resources, online classes, videos">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8JNNL8N1VG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8JNNL8N1VG');
+</script>
+<style>                            
+@import url('https://fonts.googleapis.com/css2?family=Sora');
+body { 
+  font-family: 'Sora', sans-serif;
+} 
+kbd {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.1em 0.5em;
+    margin: 0 0.2em;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    background-color: #f7f7f7;
+}
+         td{
+  font-size: 25px;
+  color: blue;
+  font-family: serif;
+}
+            li {
+  font-size: 25px;
+}
+li span {
+  font-size: 24px;
+}
+          
+div#home a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ div#home a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 280, 4)
+    )
+    ,
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 200ms;
+}
+
+ div#home a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #04AA6D;
+  color: black;
+
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}   
+
+*{
+margin: 0 auto;
+}
+.head{
+text-align: center;
+color: #EE8400;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  background: #141c38;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #7ac9f9;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #237AFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	height: 20px;
+	width: 50px;
+	transform: scale(1.2);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	height: 21px;
+	width: 21px;
+	transform: translateX(0px);
+	transition: transform 0.4s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(28px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+* {
+	box-sizing: border-box;
+}
+              .logo{
+                margin: 0;
+                background: url(logo.png);
+                background-size: 70px 70px;
+background-repeat: none;
+                float: left;
+                width: 60px;
+                height: 60px;
+            }
+            footer{
+    width:100%;
+    background-color: darkslategrey;
+    padding: 20px 0;
+    margin-top:50px;
+}
+            footer ul{
+    float:left;
+    width:48%;
+    margin:1%;
+}
+            footer ul h3{
+    font-size:30px;
+    color: azure;
+}
+
+            footer ul li{
+    list-style-type: none;
+    font-size:15px;
+    color: rgb(182, 224, 224);
+}
+            footer:after{
+    display:block;
+    content:"";
+    clear:both;
+}
+	footer a{
+		text-decoration: none;
+		color: rgb(182, 224, 224);
+	}
+		footer a:link{
+		text-decoration: none;
+		color: rgb(182, 224, 224);
+	}
+</style>
+</HEAD>
+    <BODY bgcolor=white text=005EEE>
+        <div class="progress-bar">
+<button class="back-to-top hidden">
+  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
+  </svg>
+</button>
+</div>
+<div class="topnav" id="myTopnav">
+<div class="logo"></div>
+<div class="topnav-right">
+<a class="active" href="https://divcoder7.github.io/"><i class="fa fa-fw fa-home"></i> Home</a>
+<a href="https://www.youtube.com/channel/UCgmHRP1-7BR5pLsJYVONdEQ"><i class="fa fa-fw fa-video"></i> Videos</a>
+<a href="index3.html"><i class="fa-solid fa-message-question"></i> Quizzes</a>
+<a href="index2.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+<a href="index1.html"><i class="fa fa-fw fa-address-card"></i> About Us</a>
+	<a><input type="checkbox" class="checkbox" id="chk">
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label></a>
+<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</a>
+</div>
+</div>
+<script>
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+// SOCIAL PANEL JS
+const floating_btn = document.querySelector('.floating-btn');
+const close_btn = document.querySelector('.close-btn');
+const social_panel_container = document.querySelector('.social-panel-container');
+
+floating_btn.addEventListener('click', () => {
+	social_panel_container.classList.toggle('visible')
+});
+
+close_btn.addEventListener('click', () => {
+	social_panel_container.classList.remove('visible')
+});
+</script>
+ <script>
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<hr align=center width=100% size=5 color="F2ECFF">
+<div class="head">
+<font size=7>Students Times</font>
+    </div><br>
+    <H2 ALIGN=CENTER>TIME TO DO SMART WORK</H2><br>
+   <center><IMG SRC="class.jpeg" width=40% height=40% alt="Students having fun!"></center><br>
+<center><FONT SIZE=6 COLOR=006aff FACE="Franklin Gothic Book">THIS WEBSITE IS SPECIFICALLY DESIGNED FOR THE HELP AND DEVELOPMENT OF THE STUDENTS.</FONT></center>
+       <div id="home" class="div">
+    <br><FONT COLOR=GREEN size=5>&nbsp;Must have apps:</FONT>
+    <UL TYPE=disc>
+    <li><a href="https://play.google.com/store/apps/details?id=com.microblink.photomath">Photomath</a>
+    <li><a href="https://www.savethestudent.org/out/officelens">Office lens</a>
+   <li><a href="https://sts.ac/3e5r7Hs">Microsoft office</a>
+  <li><a href="https://play.google.com/store/apps/details?id=com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish&hl=en_IN">English dictionary</a>
+  <li><a href="https://play.google.com/store/apps/details?id=com.canva.editor">Canva</a>
+        </UL>
+        <font size=6 color=A166FF><br><br><center>Important links:</center></font>
+   <table border=2 bgcolor=orange align=center bordercolor=green height="25%" width="25%" cellpadding=8>
+        <tr align=center>
+            <font size=5 color=A166FF><td><a href="https://www.naturalreaders.com/">Text Reader</a></td></font>
+            </tr>
+        <tr align=center>
+        <font size=5 color=A166FF><td><a href="https://scholar.google.com/">Google Scholar</a></td></font>
+        </tr>
+        <tr align=center>
+                <font size=5 color=A166FF><td ><a href="https://app.grammarly.com/">Grammer Checker</a></td></font>
+                </tr>
+                    <tr align=center>
+                        <font size=5 color=A166FF><td><a href="https://www.pexels.com/">Free Photo Library</a></td></font>
+                        </tr>
+        <tr align=center>
+                    <font size=5 color=A166FF><td><a href="https://www.w3schools.com/">Online Web programiing languages tutoraial</a></td></font>
+        </tr>         
+            </table><br>
+        
+        <font size=6 color=green>&nbsp;Time Saving Shortcuts(Windows):</font><br><br>
+        <font size=4><p><kbd>Win key</kbd> + <kbd>V</kbd> to open clipboard.</p></font>
+        <font size=4><p><kbd>Ctrl</kbd> + <kbd>A</kbd> to select all.</p></font>
+        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo.</p></font>
+        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Y</kbd> to redo.</p></font>
+        <font size=4><p><kbd>Ctrl</kbd> + <kbd>X</kbd> to cut selected items to clipboard.</p></font>
+        <font size=4><p><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> to open task manager.</p></font>
+        <font size=4><p><kbd>Win</kbd> + <kbd>X</kbd> to open the hidden menu.</p></font>
+        <font size=4><p><kbd>Win</kbd> + <kbd>Prtscn</kbd> to take a screenshot.</p></font>
+        <font size=4><p><kbd>Win</kbd> + <kbd>I</kbd> to open settings.</p></font>
+        <font size=4><p><kbd>Alt</kbd> + <kbd>F4</kbd> to close app.</p></font>
+        <font size=4><p><kbd>F5</kbd> to refresh.</p></font>
+        
+       <font size=6 color=A166FF><br><br><center>School E-Books:</center></font>
+       <font size=5 color=A98600><TABLE align="center" bgcolor=darkred width=25% height=30% cellpadding=8>
+    <tr>
+        <font size=4 color=A98600><td bgcolor=orange align="center"><a href ="http://davpatiala.com/D51D65FF-E9B7-40F3-A804-7CBAEB501010/CMS/Page/E-Books">DAV BOOKS</a></td>
+            </tr></font>
+    <tr>
+        <font size=4 color=A98600><td bgcolor=orange align="center"><a href ="https://ncert.nic.in/textbook.php">NCERT BOOKS</a></td>
+            </tr></font>
+           </TABLE></font></div>
+<br>
+    <b>&ensp;<iframe width="350" height="215" src="https://www.youtube.com/embed/_Gg3tFh70X0" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       <br><font size="5" color="4C5AA3">&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;HTML Basics</font><br><br>
+    &ensp;<iframe width="350" height="215" border=1 src="https://www.youtube.com/embed/AiU0OprFV8s" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br><font size="5" color="#409646">&emsp;&emsp;&emsp;&emsp;&nbsp;Python Basics</font><br><br>
+    &ensp;<iframe width="350" height="215" src="https://www.youtube.com/embed/88jm0fb1q8U" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+     <font size="5" color="red">&emsp;&emsp;&emsp;&emsp;&nbsp;Scratch Basics</font><br><br></b>
+<script>
+    const showOnPx = 100;
+const backToTopButton = document.querySelector(".back-to-top");
+const pageProgressBar = document.querySelector(".progress-bar");
+
+const scrollContainer = () => {
+  return document.documentElement || document.body;
+};
+
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth"
+  });
+};
+
+document.addEventListener("scroll", () => {
+  console.log("Scroll Height: ", scrollContainer().scrollHeight);
+  console.log("Client Height: ", scrollContainer().clientHeight);
+
+  const scrolledPercentage =
+    (scrollContainer().scrollTop /
+      (scrollContainer().scrollHeight - scrollContainer().clientHeight)) *
+    100;
+
+  pageProgressBar.style.width = `${scrolledPercentage}%`;
+
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden");
+  } else {
+    backToTopButton.classList.add("hidden");
+  }
+});
+
+backToTopButton.addEventListener("click", goToTop);
+
+</script>
+	<footer>
+                <ul>
+                    <h3>Get in Touch</h3><br>
+                    <li>FC-FUTURE CODERS</li>
+                    <li>Email Today - samarthsarthak.srdav@gmail.com</li>
+                </ul>
+		<div class="footer-form"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe3zTFuGL1kWitH6dodxjw6ew6zEyoanJjeVWilpj6bzN5h2g/viewform?embedded=true" width="350" height="290" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+        </footer>
+</BODY>
+</HTML>
