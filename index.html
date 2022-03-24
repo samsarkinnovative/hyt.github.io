@@ -220,7 +220,7 @@ body.dark {
 * {
 	box-sizing: border-box;
 }
-              .logo{
+.logo{
                 margin: 0;
                 background: url();
                 background-size: 100px 100px;
@@ -229,46 +229,257 @@ background-repeat: none;
                 width: 60px;
                 height: 60px;
             }
-            footer{
-    width:100%;
-    background-color: white;
-    padding: 20px 0;
-    margin-top:50px;
+.apps{
+color: #8138F7;
 }
-            footer ul{
-    float:left;
-    width:48%;
-    margin:1%;
-}
-            footer ul h3{
-    font-size:30px;
-    color: orange;
+.links td{ 
+color: #006300;
 }
 
-            footer ul li{
-    list-style-type: none;
-    font-size:15px;
-    color: rgb(182, 224, 224);
+* {
+  font-family: verdana;
 }
-            footer:after{
-    display:block;
-    content:"";
-    clear:both;
+
+
+.footer-distributed{
+	background: #032A6C;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px 'IBM Plex Sans Arabic', sans-serif;
+	padding: 35px 30px;
 }
-	footer a{
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
 		text-decoration: none;
-		color: rgb(182, 224, 224);
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 40%;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* The company logo */
+
+
+.footer-distributed h3 {
+	color:  #1176CE;
+    	font: normal 46px 'cursive';
+	margin: 0;
 	}
-		footer a:link{
-		text-decoration: none;
-		color: rgb(182, 224, 224);
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+  font-weight:400;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #92999f;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #92999F;
+  font-weight:400;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #00ADEE;
+	text-decoration: none;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 20%;
+    
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+    
+    
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+    font-family: 'IBM Plex Sans Arabic';
+    color: white;
+	color:  #ffffff;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+.facebook a:hover{
+	background-color: #3b5998;
+}
+.twitter a:hover{
+	background-color: #1DA1F2;
+}
+.linkedin a:hover{
+	background-color: #0077b5;
+}
+.github a:hover{
+	background-color: #171515;
+}
+.short{
+font-family: Impact;
+color: yellow;
+}
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media only screen and (max-width: 1000px) {
+
+	.footer-distributed{
+		font: bold 14px sans-serif;
 	}
-</style>
-</HEAD>
-    <BODY bgcolor= white text=005EEE>
-        <div class="progress-bar">
-<button class="back-to-top hidden">
-  <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 30px;
+		text-align: center;
+        
+	}
+.footer-distributed .footer-center iframe{
+align-items: center;
+display: block;
+}
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+.us{
+color: #92999F;
+}
+.delhi{
+font-family: garamond;
+color: white;
+}
+.footer-like span{
+font-family: garamond;
+color: white;
+font-weight:400;
+font-size:30px;
+display: inline-block;
+}
+.footer-like a{
+font-family: garamond;
+color: whitesmoke;
+font-size: 20px;
+text-decoration: none;
+}
+p.star{
+color: whitesmoke;
+}
+p.star i{
+color: black;
+font-size: 25px;
+}
+p.star a{
+font-size: 20px;
+color: black;
+text-decoration: none;
+}
+p.star a:hover{
+color: #882BC9;
+text-decoration: none;
+}
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
   </svg>
 </button>
