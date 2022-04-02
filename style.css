@@ -83,7 +83,7 @@ form .row input::placeholder{
 .wrapper form .pass a:hover{
   text-decoration: underline;
 }
-.wrapper form .button input{
+.wrapper form .button {
   color: #fff;
   font-size: 20px;
   font-weight: 500;
@@ -92,7 +92,7 @@ form .row input::placeholder{
   border: 1px solid #16a085;
   cursor: pointer;
 }
-form .button input:hover{
+form .button button:hover{
   background: #12876f;
 }
 .wrapper form .signup-link{
